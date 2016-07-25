@@ -1,0 +1,4 @@
+UseDNS no
+PermitRootLogin no
+X11Forwarding no
+AllowTcpForwarding no
