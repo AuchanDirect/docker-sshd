@@ -2,5 +2,7 @@ UseDNS no
 PermitRootLogin no
 X11Forwarding no
 AllowTcpForwarding no
+AllowUsers ssh
+AuthorizedKeysFile /etc/ssh/authorized_keys
 
 Subsystem sftp internal-sftp
