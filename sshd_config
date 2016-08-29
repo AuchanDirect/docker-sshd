@@ -1,5 +1,30 @@
+Port 22
+
+LogLevel INFO
+Protocol 2
+
+HostKey /etc/ssh/ssh_host_dsa_key
+HostKey /etc/ssh/ssh_host_ecdsa_key
+HostKey /etc/ssh/ssh_host_ed25519_key
+HostKey /etc/ssh/ssh_host_rsa_key
+
+UsePrivilegeSeparation yes
+StrcitModes yes
+
+RSAAuthentication yes
+PubkeyAuthentication yes
+IgnoreRhosts yes
+RhostsRSAAuthentication no
+HostbasedAuthentication no
+IgnoreUserKnownHosts yes
+PermitEmptyPasswords no
+ChallengeResponseAuthentication no
+
 UseDNS no
 PermitRootLogin no
+
+PrintMotd no
+TCPKeepAlive yes
 X11Forwarding no
 AllowTcpForwarding no
 AllowUsers ssh
