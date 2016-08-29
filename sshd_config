@@ -9,7 +9,7 @@ HostKey /etc/ssh/ssh_host_ed25519_key
 HostKey /etc/ssh/ssh_host_rsa_key
 
 UsePrivilegeSeparation yes
-StrcitModes yes
+StrictModes yes
 
 RSAAuthentication yes
 PubkeyAuthentication yes
