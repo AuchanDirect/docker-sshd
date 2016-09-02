@@ -26,7 +26,6 @@ PermitRootLogin no
 PrintMotd no
 TCPKeepAlive yes
 X11Forwarding no
-AllowTcpForwarding no
 AllowUsers ssh
 AuthorizedKeysFile /etc/ssh/authorized_keys
 
