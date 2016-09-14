@@ -1,7 +1,7 @@
 FROM alpine:3.3
 
 # Add openssh
-RUN apk add --no-cache openssh
+RUN apk add --no-cache openssh rsync
 
 # Copy sshd config
 RUN ssh-keygen -A
