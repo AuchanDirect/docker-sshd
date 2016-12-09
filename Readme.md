@@ -4,8 +4,8 @@ Create an ssh/scp/sftp access point.
 
 This container runs an sshd process, allowing authentication by key for the "ssh" user.
 
-Usage:
- * Mount your public keys in /home/ssh/.ssh/authorized_keys
+How to setup:
+ * Mount your public keys in /etc/ssh/authorized_keys
  * Mount whatever files from the host filesystem into the user "home"
  * Expose the 22 port
 
