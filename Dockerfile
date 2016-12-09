@@ -14,9 +14,6 @@ RUN adduser -D -g ",,," -h /home/ssh ssh && \
   chown root:root /home/ssh && \
   chmod 755 /home/ssh
 
-# Redirect auth logs to stdout
-RUN ln -s /dev/stdout /var/log/auth.log
-
 EXPOSE 22
 
-CMD ["/usr/sbin/sshd", "-D"]
+CMD ["/usr/sbin/sshd", "-D", "-E", "/var/log/auth.log"]

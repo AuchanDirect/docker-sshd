@@ -1,8 +1,6 @@
 Port 22
 
-SyslogFacility AUTH
 LogLevel VERBOSE
-
 Protocol 2
 
 HostKey /etc/ssh/ssh_host_dsa_key
@@ -31,4 +29,4 @@ X11Forwarding no
 AllowUsers ssh
 AuthorizedKeysFile /etc/ssh/authorized_keys
 
-Subsystem sftp internal-sftp -l VERBOSE
+Subsystem sftp internal-sftp
