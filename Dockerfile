@@ -16,4 +16,4 @@ RUN adduser -D -g ",,," -h /home/ssh ssh && \
 
 EXPOSE 22
 
-CMD ["/usr/sbin/sshd", "-D"]
+CMD ["/usr/sbin/sshd", "-Dd"]
